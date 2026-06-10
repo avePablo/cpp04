@@ -1,10 +1,23 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pabalvar <pabalvar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/10 14:47:21 by pabalvar          #+#    #+#             */
+/*   Updated: 2026/06/10 15:01:30 by pabalvar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef ANIMAL_HPP
 #define ANIMAL_HPP
 
 #include <iostream>
 #include <string>
 
-class Animal {
+class Animal 
+{
 public:
     Animal( void );
     Animal( std::string const & type );
@@ -19,4 +32,4 @@ protected:
     std::string type;
 };
 
-#endif // ANIMAL_HPP
+#endif

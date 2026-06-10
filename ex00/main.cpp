@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pabalvar <pabalvar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/10 12:48:03 by pabalvar          #+#    #+#             */
+/*   Updated: 2026/06/10 14:50:26 by pabalvar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include "Animal.hpp"
 #include "Dog.hpp"
@@ -5,7 +17,8 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
-int main( void ) {
+int main( void ) 
+{
     const Animal* meta = new Animal();
     const Animal* j = new Dog();
     const Animal* i = new Cat();

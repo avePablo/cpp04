@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: pabalvar <pabalvar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/06/10 14:47:49 by pabalvar          #+#    #+#             */
+/*   Updated: 2026/06/10 14:52:39 by pabalvar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include "Animal.hpp"
 #include "Dog.hpp"
@@ -5,18 +17,21 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
-int main( void ) {
+int main( void ) 
+{
     const int count = 4;
     const Animal* animals[count];
 
-    for ( int i = 0; i < count; ++i ) {
+    for ( int i = 0; i < count; ++i ) 
+    {
         if ( i < count / 2 )
             animals[i] = new Dog();
         else
             animals[i] = new Cat();
     }
 
-    for ( int i = 0; i < count; ++i ) {
+    for ( int i = 0; i < count; ++i ) 
+    {
         animals[i]->makeSound();
     }
 
@@ -32,7 +47,8 @@ int main( void ) {
     delete firstDog;
     delete secondDog;
 
-    for ( int i = 0; i < count; ++i ) {
+    for ( int i = 0; i < count; ++i ) 
+    {
         delete animals[i];
     }
 
